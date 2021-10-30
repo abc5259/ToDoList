@@ -9,10 +9,17 @@ function onGeoOk(position) {
   fetch(url)
     .then(response => response.json())
     .then(data => {
-      const weather = document.querySelector("#weather span:first-child");
-      const city = document.querySelector("#weather span:last-child");
-      weather.innerText = `${data.weather[0].main} / ${data.main.temp}`;
+      const city = document.querySelector(".weather__city");
+      const temp = document.querySelector(".weather__temp");
+      const weather = document.querySelector(".weather__main");
+      const maxTemp = document.querySelector(".weather__maxTemp");
+      const minTemp = document.querySelector(".weather__minTemp");
+
       city.innerText = data.name;
+      temp.innerText = `${Math.floor(data.main.temp)}℃`;
+      weather.innerText = data.weather[0].description;
+      maxTemp.innerText = `최고:${Math.ceil(data.main.temp_max)}℃`;
+      minTemp.innerText = `최저:${Math.floor(data.main.temp_min)}℃`;
     });
 }
 
