@@ -1,0 +1,109 @@
+main {
+  background-color: inherit;
+  display: flex;
+  justify-content: center;
+}
+
+.todo__wrapper {
+  background: linear-gradient(springgreen, #9198e5);
+  border-radius: 10px;
+  padding: 10px 20px;
+  width: 400px;
+}
+
+.todo__header {
+  background-color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.3;
+  margin-bottom: 40px;
+}
+
+.todo__header .todo__title {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+#todo-form {
+  font-size: 1.5rem;
+  display: flex;
+}
+
+#todo-form input {
+  font-size: 1.5rem;
+  border: none;
+
+  padding: 10px 20px;
+  background-color: white;
+  margin-right: 10px;
+}
+#todo-form input::placeholder {
+  color: #004c8c;
+  font-weight: 600;
+}
+#todo-form button {
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  flex-grow: 1;
+  font-size: 1.3rem;
+  color: white;
+  background-color: #80deea;
+}
+
+#todo-form input:focus {
+  outline: none;
+}
+
+.todo__remain {
+  padding: 15px;
+  text-align: center;
+  color: #004c8c;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+ul li {
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background-color: lawngreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 1.3rem;
+  transition: opacity 0.2s ease-in-out;
+}
+
+li.checked {
+  opacity: 0.3;
+}
+
+li.checked span {
+  text-decoration: line-through;
+}
+
+li .fa-check-circle {
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+li .fa-check-circle:hover {
+  color: #aeaeae;
+}
+
+li span {
+  line-height: 5px;
+  flex-grow: 1;
+}
+
+li .fa-trash-alt {
+  cursor: pointer;
+}
+
+li .fa-trash-alt:hover {
+  opacity: 1;
+  color: red;
+}

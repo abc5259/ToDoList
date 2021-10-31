@@ -3,7 +3,8 @@
 /* screens */
 @import "./screens/header.css";
 @import "./screens/weather.css";
-
+@import "./screens/todo-form.css";
+@import "./screens/quote.css";
 .hidden {
   display: none;
 }
