@@ -67,7 +67,7 @@ main {
 ul li {
   border-radius: 10px;
   margin-bottom: 10px;
-  background-color: lawngreen;
+  background: linear-gradient(#5ddef4, #00acc1);
   display: flex;
   justify-content: center;
   align-items: center;
