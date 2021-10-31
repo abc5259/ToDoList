@@ -15,6 +15,7 @@ header {
 }
 
 .header__column:last-child input {
+  max-width: 450px;
   font-weight: 600;
   border: none;
   border-bottom: 1px solid;
@@ -34,7 +35,9 @@ header {
   background-color: springgreen;
   padding: 10px 20px;
   border-radius: 20px;
-  font-size: 1rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0 auto;
 }
 
 #greeting {
