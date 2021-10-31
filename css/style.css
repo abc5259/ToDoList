@@ -47,4 +47,13 @@ img {
   #login-form button {
     margin-bottom: 20px;
   }
+
+  #todo-form {
+    flex-direction: column;
+    align-items: center;
+  }
+  #todo-form button {
+    padding: 10px 20px;
+    margin: 20px 0;
+  }
 }
